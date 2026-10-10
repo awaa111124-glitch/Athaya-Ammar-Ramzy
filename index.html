@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#100810">
+  <title>For Ammar ♡</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,500;0,600;1,400&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- TOMBOL MUSIK -->
+  <button class="music-button" id="musicButton" type="button">
+    ♫ Play our song
+  </button>
+
+  <audio id="loveSong" loop preload="auto">
+    <source src="./music/music-ammar.mp3" type="audio/mpeg">
+  </audio>
+
+  <main class="website">
+
+    <!-- HALAMAN 1 -->
+    <section class="screen active" id="screen1">
+      <div class="small-heart">♡</div>
+      <p class="eyebrow">A LITTLE SOMETHING FOR YOU</p>
+      <h1>hai, <span>Ammar.</span></h1>
+
+      <p class="description">
+        ada sesuatu yang ingin aku sampaikan.
+        kali ini, aku ingin kamu membacanya pelan-pelan.
+      </p>
+
+      <button class="main-button" data-next="screen2">
+        buka suratnya <span>↗</span>
+      </button>
+
+      <p class="bottom-note">made with love, just for you</p>
+    </section>
+
+    <!-- HALAMAN 2 -->
+    <section class="screen" id="screen2">
+      <p class="eyebrow">A LITTLE MEMORY</p>
+      <h2>sejak hari itu, <em>kita.</em></h2>
+
+      <p class="description">
+        hari ketika kita kembali dekat dan cerita ini berlanjut.
+      </p>
+
+      <div class="timer-card">
+        <p class="timer-label">our story has been going on for</p>
+        <div id="days" class="days">000</div>
+        <p class="days-label">hari</p>
+
+        <div class="timer-details">
+          <div><strong id="hours">00</strong><span>jam</span></div>
+          <div><strong id="minutes">00</strong><span>menit</span></div>
+          <div><strong id="seconds">00</strong><span>detik</span></div>
+        </div>
+
+        <p class="date-note">27 juni 2025 ♡</p>
+      </div>
+
+      <button class="main-button" data-next="screen3">
+        lanjutkan <span>↗</span>
+      </button>
+    </section>
+
+    <!-- HALAMAN 3 -->
+    <section class="screen" id="screen3">
+      <p class="eyebrow">SOME WORDS FROM ME</p>
+      <h2>untuk kamu, <em>Mar.</em></h2>
+
+      <div class="letter-card">
+        <p>
+          aku bersyukur kamu pernah hadir di hidup aku.
+          mungkin aku nggak selalu bisa menyampaikan semuanya
+          dengan cara yang tepat, tapi aku harap kamu tahu
+          kalau kehadiran kamu berarti buat aku.
+        </p>
+
+        <p>
+          selama mengenal kamu, ada banyak hal yang aku pelajari.
+          aku belajar untuk lebih sabar, lebih memahami,
+          dan memperbaiki diri sedikit demi sedikit.
+        </p>
+
+        <p>
+          aku nggak bisa menjanjikan kalau aku bakal selalu
+          sempurna. tapi aku mau terus belajar menjadi seseorang
+          yang lebih baik, tanpa kehilangan diriku sendiri.
+        </p>
+
+        <p>
+          terima kasih sudah menjadi bagian dari cerita aku.
+          aku senang bisa mengenal kamu, Ammar. ♡
+        </p>
+      </div>
+
+      <button class="main-button" data-next="screen4">
+        ada satu hal lagi <span>↗</span>
+      </button>
+    </section>
+
+    <!-- HALAMAN 4 -->
+    <section class="screen" id="screen4">
+      <div class="small-heart">♡</div>
+      <p class="eyebrow">BEFORE YOU GO</p>
+
+      <h2>ini bagian<br>yang paling <em>aku suka.</em></h2>
+
+      <p class="description">
+        aku punya satu hal kecil lagi buat kamu.
+        semoga kamu suka, ya.
+      </p>
+
+      <button class="main-button" data-next="reveal">
+        buka kejutan ♡
+      </button>
+    </section>
+
+    <!-- KEJUTAN TERAKHIR -->
+    <section class="screen reveal" id="reveal">
+
+      <div class="tunnel-scene">
+        <canvas id="heartCanvas"></canvas>
+
+        <div class="tunnel-title">
+          <span>i love you,</span>
+          <strong>Ammar ♡</strong>
+        </div>
+
+        <p class="tunnel-caption">
+          a little universe, just for you
+        </p>
+      </div>
+
+      <div class="final-letter">
+        <p class="eyebrow">A MESSAGE FROM MY HEART</p>
+        <h2>dear, <em>Ammar.</em></h2>
+
+        <p>
+          kalau suatu hari kamu bertanya seberapa berarti
+          kamu buat aku, mungkin aku nggak akan bisa menjawabnya
+          dengan kata-kata yang sempurna.
+        </p>
+
+        <p>
+          aku cuma berharap, di antara banyak hal yang kamu
+          temui dalam hidup, kamu juga menemukan ketulusan
+          dari seseorang yang benar-benar menghargai kehadiranmu.
+        </p>
+
+        <p>
+          terima kasih sudah menjadi bagian dari cerita aku.
+          aku nggak tahu apa yang akan terjadi nanti, tapi aku
+          akan tetap menghargai setiap kenangan yang pernah kita punya.
+        </p>
+
+        <p class="signature">
+          dengan sayang,<br>
+          <em>untuk Ammar ♡</em>
+        </p>
+      </div>
+
+      <button class="main-button" id="replayButton">
+        baca lagi dari awal ↺
+      </button>
+
+    </section>
+
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
